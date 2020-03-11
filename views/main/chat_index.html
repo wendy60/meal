@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WebSockets-chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="/public/css/styles.css" rel="stylesheet" />
+    <script src="/public/js/chat.js"></script>
+    <style>
+        .xixi {
+            width: 100px;
+            text-align: center;
+            line-height: 100%;
+            padding: 0.3em;
+            font: 16px Arial, sans-serif bold;
+            font-style: normal;
+            text-decoration: none;
+            margin: 2px;
+            vertical-align: text-bottom;
+            zoom: 1;
+            outline: none;
+            font-size-adjust: none;
+            font-stretch: normal;
+            border-radius: 50px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+            color: #e78617;
+            border: 0.2px solid #22ffaa;
+            background-repeat: repeat;
+            background-size: auto;
+            background-origin: padding-box;
+            background-clip: padding-box;
+            background-color: #33ffbb;
+            background: linear-gradient(to bottom, #eeeff9 0%, #33ffdd 100%);
+        }
+        
+        .xixi:hover {
+            background: rgb(38, 255, 146);
+        }
+    </style>
+    <a href="/">
+        <button class="xixi">back</button>
+    </a>
+
+
+
+</head>
+
+<body>
+
+    <div id="mario-chat">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <input id="handle" type="text" placeholder="Handle" />
+        <input id="message" type="text" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+    <script src="/public/js/chat.js"></script>
+
+</body>
+
+</html>
