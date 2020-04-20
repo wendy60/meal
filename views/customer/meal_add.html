@@ -1,0 +1,50 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/order/meal/add">order meal home page</a></li>
+    <li><span>meal add</span></li>
+</ol>
+
+<h3>meal add</h3>
+<form role="form" method="post">
+
+
+    <div class="form-group">
+        <label for="restaurant">restaurant:</label>
+        <select name="restaurant" id="restaurant" class="form-control">
+            {%for menu in menus%}
+            <option value="{{menu.title}}">{{menu.title}}</option>
+            {%endfor%}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="meal">meal:</label>
+        <select name="meal" id="meal" class="form-control">
+            {%for menu in menus%}
+            <option value="{{menu.meal}} {{menu.price}}">{{menu.meal}} {{menu.price}}</option>
+            {%endfor%}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="dining_style">dining_style:</label>
+        <select name="dining_style" id="dining_style" class="form-control">
+            <option >delivery</option>
+            <option >collection</option>
+            <option >eat in</option>
+        </select>
+    </div>
+    <p>{{menu.price}}</p>
+    <div class="form-group">
+        <label for="payment_method">payment_method:</label>
+        <select name="payment_method" id="payment_method" class="form-control">
+            <option >cash</option>
+            <option >card</option>
+        </select>
+    </div>
+
+    <button style="display:block;margin:0 auto" type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+{% endblock %}

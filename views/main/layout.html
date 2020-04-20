@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Unite Restaurant Order Meal Website</title>
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/public/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="/public/js/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="/public/images/0001.png" width="18%"></div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            {%if category == ''%}
+            <b><a href="/" class="focus">Home Page</a></b> {%else%}
+            <a href="/">Home Page</a> {%endif%} {%for cate in categories%} {%if category == cate.id%}
+            <a href="/?category={{cate.id}}" class="focus">{{cate.name}}</a> {%else%}
+            <a href="/?category={{cate.id}}">{{cate.name}}</a> {%endif%} {%endfor%}
+        </div>
+    </nav>
+
+
+
+    <main class="clear">
+        <div class="mainLeft">
+            {%block restaurant%}{%endblock%}
+        </div>
+
+        <div class="mainRight">
+            {% if customerInfo._id %}
+            <div class="rightBox" id="customerInfo">
+                <div class="title"><b><span>Customer Information</span></b></div>
+                <p><span class="colDark">{{customerInfo.username}}</span></p>
+
+                {% if customerInfo.isAdmin%}
+                <p><b><span class="colDanger">Hello, Administrator</span></b></p>
+                <b><a href="/admin">Enter to management</a></b> {% elseif customerInfo.isManager%}
+                <p><b><span class="colDanger">Hello, manager</span></b></p>
+                <b><a href="/manager">Enter to manage restaurant menu</a></b> {% else %}
+                <p><b><span class="colDanger">Hello, Welcome to this Website!</span></b></p>
+                <b><a href="/order">Enter to order meal</a></b> {%endif%}
+                <p><span class="colDark"><b><a href="javascript:;" id="logout">Logout</a></b></span></p>
+            </div>
+            {% else %}
+            <div class="rightBox" id="loginBox">
+                <div class="title"><span>login</span></div>
+                <div class="line"><span class="colDark">username：</span><input name="username" type="text" /><em></em></div>
+                <div class="line"><span class="colDark">password：</span><input name="password" type="password" /><em></em></div>
+                <div class="line"><span class="colDark"></span><button>log in</button></div>
+                <p class="textRight">not registered yet?<a href="javascript:;" class="colMint">sign up now!</a>　</p>
+                <p class="colWarning textCenter"></p>
+            </div>
+
+            <div class="rightBox" id="registerBox" style="display: none;">
+                <div class="title"><span>sign in</span></div>
+                <div class="line"><span class="colDark">username：</span><input name="username" type="text" /></div>
+                <div class="line"><span class="colDark">password：</span><input name="password" type="password" /></div>
+                <div class="line"><span class="colDark">confirm：</span><input name="repassword" type="password" /></div>
+                <div class="line"><span class="colDark"></span><button>sign up</button></div>
+                <p class="textRight">existing account？<a href="javascript:;" class="colMint">sign up now!</a>　</p>
+                <p class="colWarning textCenter"></p>
+            </div>
+            {% endif %}
+
+            <div class="rightBox">
+                <div class="title"><span>Welcome to contact with staff</span></div>
+                <p><a href="/chat" target="_blank" class="colDanger">Customer Service</a></p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <div class="copyright textCenter">Wendy | 2019.12.21</div>
+</body>
+
+</html>

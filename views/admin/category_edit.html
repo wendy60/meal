@@ -1,0 +1,18 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">management home page</a></li>
+    <li><span>category edit</span></li>
+</ol>
+
+<h3>category edit - {{category.name}}</h3>
+
+<form role="form" method="post">
+    <div class="form-group">
+        <label for="name">category name:</label>
+        <input type="text" class="form-control" value="{{category.name}}" id="name" placeholder="please enter category name" name="name">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+{% endblock %}

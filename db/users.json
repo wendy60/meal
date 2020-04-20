@@ -1,0 +1,38 @@
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5dfeb151067d09501925d3a6"),
+	"password" : "123",
+	"username" : "test"
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5dfeb457067d09501925d3a7"),
+	"password" : "123",
+	"username" : "test1"
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5dff954205ee6a5b75f95d0b"),
+	"password" : "123",
+	"username" : "123"
+},
+{
+	"_id" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"isAdmin" : true,
+	"password" : "admin",
+	"username" : "admin"
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e134750378b556a5d476afb"),
+	"isAdmin" : false,
+	"password" : "123",
+	"username" : "wendy"
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e134758378b556a5d476afc"),
+	"isAdmin" : false,
+	"password" : "123",
+	"username" : "oliver"
+},

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/public/css/bootstrap-theme.min.css" type="text/css" />
+    <script src="/public/js/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!--top navigation-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/admin">administrator management</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/admin/customer">customer management</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        restaurant category management <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/admin/category">restaurant category home page</a></li>
+                            <li><a href="/admin/category/add">add restaurant category</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        restaurant management <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/admin/restaurant">restaurant home page</a></li>
+                            <li><a href="/admin/restaurant/add">add restaurant</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        {{customerInfo.username}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/">logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid ">
+        {%block main%}{%endblock%}
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">management home page</a></li>
+    <li><span>content edit</span></li>
+</ol>
+
+<h3>content edit-{{content.title}}</h3>
+<form role="form" method="post">
+    <div class="form-group">
+        <label for="title">category:</label>
+        <select name="category" id="category" class="form-control">
+            {%for category in categories%}
+            <option value="{{category.id}}">{{category.name}}</option>
+            {%endfor%}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="title">title</label>
+        <input type="text" value="{{content.title}}" class="form-control" id="title" placeholder="please enter the title" name="title">
+    </div>
+
+    <div class="form-group">
+        <label for="description">brief introduction:</label>
+        <textarea name="description" id="description" class="form-control" rows="5" placeholder="please enter the brief introduction">{{content.description}}</textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="content">content:</label>
+        <textarea name="content" id="content" class="form-control" rows="10" placeholder="please enter the content">{{content.content}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+{% endblock %}
