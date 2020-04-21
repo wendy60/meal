@@ -1,0 +1,49 @@
+ {%extends 'layout.html'%} {%block restaurant%}
+<div class="listBox">
+    <h1>{{restaurant.title}}</h1>
+    <p class="colDefault">
+        auther：<span class="colInfo">{{customerInfo.username}}</span> - time：
+        <span class="colInfo">{{restaurant.addtime|date('Y-m-d H:i:s')}}</span> - view：
+        <span class="colInfo">{{restaurant.views}}</span> - comment：
+        <span class="colInfo">{{restaurant.comments.length}}</span>
+    </p>
+    <dfn>
+            {{restaurant.content}}
+        </dfn>
+</div>
+
+<div class="listBox message">
+    <h3 class="textLeft"><strong>comment</strong> <span class="em">totally have <em id="messageCount">{{restaurant.comments.length}}</em> iterm of comment</span></h3>
+
+    {% if customerInfo._id %}
+    <p class="textLeft">welcome to comment</p>
+    <p class="textLeft clear">
+        <textarea id="messageContent"></textarea>
+        <input type="hidden" id="restaurantId" value="{{restaurant.id}}">
+        <button id="messageBtn" class="submit">submit</button>
+    </p>
+    {%else%}
+    <p class="bgDanger" style="line-height: 30px;">You are not logged in, please log in first！</p>
+    {%endif%}
+
+    <div class="messageList">
+    </div>
+
+    <div class="pager">
+        <ul class="clear">
+            <li class="previous">
+                <a href="">previous page</a>
+            </li>
+            <li></li>
+            <li class="next">
+                <a href="">next page</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<script src="/public/js/comment.js"></script>
+{%endblock%}

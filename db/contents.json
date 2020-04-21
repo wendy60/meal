@@ -1,0 +1,307 @@
+{
+	"__v" : NumberInt(4),
+	"_id" : ObjectId("5e033ce06b971bb1d59f8bc9"),
+	"addtime" : ISODate("2019-12-25T10:32:01.243+00:00"),
+	"addTime" : ISODate("2019-12-26T04:06:29.196+00:00"),
+	"category" : ObjectId("5e0354e2b71071b6bb1cb39c"),
+	"comment" : [ ],
+	"comments" : [
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T20:51:06.775+00:00"),
+			"content" : "哈哈哈"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T20:51:51.888+00:00"),
+			"content" : "京津冀"
+		}
+	],
+	"content" : "Node.js allows the creation of Web servers and networking tools using JavaScript and a collection of \"modules\" that handle various core functionalities. Modules are provided for file system I/O, networking (DNS, HTTP, TCP, TLS/SSL, or UDP), binary data (buffers), cryptography functions, data streams, and other core functions. Node.js's modules use an API designed to reduce the complexity of writing server applications.\r\n\r\nJavaScript is the only language that Node.js supports natively, but many compile-to-JS languages are available. As a result, Node.js applications can be written in CoffeeScript, Dart, TypeScript, ClojureScript, and others.\r\n\r\nNode.js is primarily used to build network programs such as Web servers. The most significant difference between Node.js and PHP is that most functions in PHP block until completion (commands only execute after previous commands finish), while Node.js functions are non-blocking (commands execute concurrently or even in parallel, and use callbacks to signal completion or failure).\r\n\r\nNode.js is officially supported on Linux, macOS and Microsoft Windows 7 and Server 2008 (and later), with tier 2 support for SmartOS and IBM AIX and experimental support for FreeBSD. OpenBSD also works, and LTS versions available for IBM I (AS/400). The provided source code may also be built on similar operating systems to those officially supported or be modified by third parties to support others such as NonStop OS and Unix servers.\r\n",
+	"description" : "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. ",
+	"title" : "The basic technology of node.js ",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(96)
+},
+{
+	"__v" : NumberInt(8),
+	"_id" : ObjectId("5e0356eab71071b6bb1cb3a7"),
+	"addtime" : ISODate("2019-12-25T12:23:17.838+00:00"),
+	"category" : ObjectId("5e03550fb71071b6bb1cb39f"),
+	"comment" : [ ],
+	"comments" : [
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:20:51.000+00:00"),
+			"content" : "333"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:21:00.427+00:00"),
+			"content" : "2"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:36:30.843+00:00"),
+			"content" : "sss"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:36:45.316+00:00"),
+			"content" : "qqq"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:41:24.466+00:00"),
+			"content" : "nnnn"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T20:52:37.062+00:00"),
+			"content" : "你"
+		}
+	],
+	"content" : "Ad hoc queries\r\nMongoDB supports field, range query, and regular expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size.\r\n\r\nIndexing\r\nFields in a MongoDB document can be indexed with primary and secondary indices.\r\n\r\nReplication\r\nMongoDB provides high availability with replica sets. A replica set consists of two or more copies of the data. Each replica set member may act in the role of the primary or secondary replica at any time. All writes and reads are done on the primary replica by default. Secondary replicas maintain a copy of the data of the primary using built-in replication. When a primary replica fails, the replica set automatically conducts an election process to determine which secondary should become the primary. Secondaries can optionally serve read operations, but that data is only eventually consistent by default.\r\n",
+	"description" : "MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with the schema. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).",
+	"title" : "how convenience to use mongoDB ",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(55)
+},
+{
+	"__v" : NumberInt(25),
+	"_id" : ObjectId("5e0358ca62819ab7444f9661"),
+	"addtime" : ISODate("2019-12-25T12:40:24.007+00:00"),
+	"addTime" : ISODate("2019-12-26T04:07:14.241+00:00"),
+	"category" : ObjectId("5e0355a0b71071b6bb1cb3a6"),
+	"comment" : [ ],
+	"comments" : [
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T16:07:53.901+00:00"),
+			"content" : "abcd"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T16:27:48.991+00:00"),
+			"content" : "a"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T16:31:14.435+00:00"),
+			"content" : "a"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T17:15:09.455+00:00"),
+			"content" : "abcd"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T17:16:02.374+00:00"),
+			"content" : "nnn"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T17:16:36.347+00:00"),
+			"content" : "jjj"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T17:26:47.693+00:00"),
+			"content" : "test"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T17:27:28.368+00:00"),
+			"content" : "test1"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:03:48.845+00:00"),
+			"content" : "comment!!!"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:46:34.176+00:00"),
+			"content" : "kxr"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:28.659+00:00"),
+			"content" : "j"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:31.827+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:36.822+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:37.333+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:37.545+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:37.734+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:55:37.914+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T19:59:23.711+00:00"),
+			"content" : "j"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T21:24:12.978+00:00"),
+			"content" : "new one"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T21:24:58.471+00:00"),
+			"content" : "wejrklqwr"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T21:40:27.377+00:00"),
+			"content" : "hello"
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T21:40:30.022+00:00"),
+			"content" : ""
+		},
+		{
+			"username" : "admin",
+			"postTime" : ISODate("2019-12-26T21:48:51.836+00:00"),
+			"content" : "hello hhh"
+		}
+	],
+	"content" : "Ajax, however, is widely used in client-side programming (e.g. JavaScript) to allow for data to be sent and received to and from a database/server. What’s special about using Ajax programming is that you can exchange data in the background without actually disturbing the user experience. ",
+	"description" : "Ajax is short for Asynchronous JavaScript and XML, which refers to a set of web development techniques rather than an actual programming language",
+	"title" : "what is AJAX",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(122)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e134ea9702d2a6c5128e8ce"),
+	"addtime" : ISODate("2020-01-06T15:01:43.831+00:00"),
+	"category" : ObjectId("5e035598b71071b6bb1cb3a5"),
+	"comments" : [ ],
+	"content" : "JSON is a language-independent data format. It was derived from JavaScript, but many modern programming languages include code to generate and parse JSON-format data. The official Internet media type for JSON is application/JSON. JSON filenames use the extension .json.\r\nDouglas Crockford originally specified the JSON format in the early 2000s. JSON was first standardized in 2013, as ECMA-404. The latest JSON format standard was published in 2017 as RFC 8259 and remains consistent with ECMA-404. That same year, JSON was also standardized as ISO/IEC 21778:2017. The ECMA and ISO standards describe only the allowed syntax, whereas the RFC covers some security and interoperability considerations.",
+	"description" : "JavaScript Object Notation is an open-standard file format or data interchange format that uses human-readable text to transmit data objects consisting of attribute-value pairs and array data types (or any other serializable value). It is a very common data format, with a diverse range of applications, such as serving as a replacement for XML in AJAX systems.",
+	"title" : "brief introduction for JSON",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e134f3c702d2a6c5128e8cf"),
+	"addtime" : ISODate("2020-01-06T15:01:43.831+00:00"),
+	"category" : ObjectId("5e035563b71071b6bb1cb3a4"),
+	"comments" : [ ],
+	"content" : "The WebSocket protocol enables interaction between a web browser (or other client application) and a web server with lower overhead than half-duplex alternatives such as HTTP polling, facilitating real-time data transfer from and to the server. This is made possible by providing a standardized way for the server to send content to the client without being first requested by the client, and allowing messages to be passed back and forth while keeping the connection open. In this way, a two-way ongoing conversation can take place between the client and the server. The communications are done over TCP port number 80 (or 443 in the case of TLS-encrypted connections), which is of benefit for those environments which block non-web Internet connections using a firewall. Similar two-way browser-server communications have been achieved in non-standardized ways using stopgap technologies such as Comet.\r\n\r\nMost browsers support the protocol, including Google Chrome, Microsoft Edge, Internet Explorer, Firefox, Safari, and Opera.",
+	"description" : "WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection. The WebSocket protocol was standardized by the IETF as RFC 6455 in 2011, and the WebSocket API in Web IDL is being standardized by the W3C.\r\nWebSocket is distinct from HTTP. Both protocols are located at layer 7 in the OSI model and depend on TCP at layer 4. Although they are different, RFC 6455 states that WebSocket \"is designed to work over HTTP ports 80 and 443 as well as to support HTTP proxies and intermediaries,\" thus making it compatible with the HTTP protocol. To achieve compatibility, the WebSocket handshake uses the HTTP Upgrade header to change from the HTTP protocol to the WebSocket protocol.",
+	"title" : "the advantages of websocket",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e134fd7702d2a6c5128e8d0"),
+	"addtime" : ISODate("2020-01-06T15:01:43.831+00:00"),
+	"category" : ObjectId("5e0354f1b71071b6bb1cb39e"),
+	"comments" : [ ],
+	"content" : "HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> directly introduce content into the page. Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.\r\nHTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.",
+	"description" : "Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.\r\nWeb browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.",
+	"title" : "design an beautiful webpage through html",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e1474bd8990458ce8d51d37"),
+	"addtime" : ISODate("2020-01-07T12:00:43.030+00:00"),
+	"category" : ObjectId("5e0354ebb71071b6bb1cb39d"),
+	"comments" : [ ],
+	"content" : "CSS is not a programming language, like C++ or JavaScript. However, CSS is not as easy as it seems. If you try to use it without understanding, you will have difficulties in web development. Therefore, learning CSS is as important as learning a programming language.",
+	"description" : "CSS (Cascading Style Sheets) is a language for styling the webpage. We can change the appearance and the layout of the webpage by using CSS. We can also define how a website’s view changes in different screens like desktops, tablets, and mobile devices.",
+	"title" : "the cute tool -- CSS",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e1477118990458ce8d51d38"),
+	"addtime" : ISODate("2020-01-07T12:00:43.030+00:00"),
+	"category" : ObjectId("5e03551fb71071b6bb1cb3a0"),
+	"comments" : [ ],
+	"content" : "The popularity of a web framework is important because it is an indicator of whether it will continue to be maintained, and what resources are likely to be available in terms of documentation, add-on libraries, and technical support.\r\n\r\nThere isn't any readily-available and definitive measure of the popularity of server-side frameworks (although sites like Hot Frameworks attempt to assess popularity using mechanisms like counting the number of GitHub projects and StackOverflow questions for each platform). A better question is whether Node and Express are \"popular enough\" to avoid the problems of unpopular platforms. Are they continuing to evolve? Can you get help if you need it? Is there an opportunity for you to get paid work if you learn Express?\r\n\r\nBased on the number of high profile companies that use Express, the number of people contributing to the codebase, and the number of people providing both free and paid-for support, then yes, Express is a popular framework!",
+	"description" : "Express is the most popular Node web framework and is the underlying library for a number of other popular Node web frameworks. It provides mechanisms to:\r\nWrite handlers for requests with different HTTP verbs at different URL paths (routes).\r\nIntegrate with \"view\" rendering engines in order to generate responses by inserting data into templates.\r\nSet common web application settings like the port to use for connecting, and the location of templates that are used for rendering the response.\r\nAdd additional request processing \"middleware\" at any point within the request handling pipeline.",
+	"title" : "introduction express framework",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(2)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e14795f8990458ce8d51d39"),
+	"addtime" : ISODate("2020-01-07T12:00:43.030+00:00"),
+	"category" : ObjectId("5e035527b71071b6bb1cb3a1"),
+	"comments" : [ ],
+	"content" : "Angular has the following key features which make it one of the powerful frameworks in the market.\r\n\r\nMVC – The framework is built on the famous concept of MVC (Model-View-Controller). This is a design pattern used in all modern-day web applications. This pattern is based on splitting the business logic layer, the data layer, and presentation layer into separate sections. The division into different sections is done so that each one could be managed more easily.\r\n\r\nData Model Binding – You don't need to write special code to bind data to the HTML controls. This can be done by Angular by just adding a few snippets of code.\r\n\r\nWriting less code – When carrying out DOM manipulation a lot of JavaScript was required to be written to design any application. But with Angular, you will be amazed at the lesser amount of code you need to write for DOM manipulation.",
+	"description" : "AngularJS is an open-source Model-View-Controller framework that is similar to the JavaScript framework.\r\nAngular JS is probably one of the most popular modern-day web frameworks available today. This framework is used for developing mostly Single Page applications. This framework has been developed by a group of developers from Google itself.\r\nBecause of the sheer support of Google and ideas from a wide community forum, the framework is always kept up to date. Also, it always incorporates the latest development trends in the market.",
+	"title" : "introduction angular framework",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e147a5e8990458ce8d51d3a"),
+	"addtime" : ISODate("2020-01-07T12:00:43.030+00:00"),
+	"category" : ObjectId("5e03553bb71071b6bb1cb3a2"),
+	"comments" : [ ],
+	"content" : "The core client-side JavaScript language consists of some common programming features that allow you to do things like:\r\n\r\nStore useful values inside variables. In the above example, for instance, we ask for a new name to be entered then store that name in a variable called name.\r\nOperations on pieces of text (known as \"strings\" in programming). In the above example, we take the string \"Player 1: \" and join it to the name variable to create the complete text label, e.g. ''Player 1: Chris\".\r\nRunning code in response to certain events occurring on a web page. We used a click event in our example above to detect when the button is clicked and then run the code that updates the text label.\r\nAnd much more!\r\nWhat is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.\r\n\r\nAPIs are ready-made sets of code building blocks that allow a developer to implement programs that would otherwise be hard or impossible to implement. They do the same thing for programming that ready-made furniture kits do for home building — it is much easier to take ready-cut panels and screw them together to make a bookshelf than it is to work out the design yourself, go and find the correct wood, cut all the panels to the right size and shape, find the correct-sized screws, and then put them together to make a bookshelf.",
+	"description" : "JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)",
+	"title" : "how to use javascript efficiency?",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(2)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e147c498990458ce8d51d3b"),
+	"addtime" : ISODate("2020-01-07T12:00:43.030+00:00"),
+	"category" : ObjectId("5e035558b71071b6bb1cb3a3"),
+	"comments" : [ ],
+	"content" : "Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. Hosted on GitHub.\r\n\r\nassert helps to determine the status of the test, it determines the failure of the test.\r\ndescribe is a function that holds the collection of tests. It takes two parameters, first one is the meaningful name to functionality under test and the second one is the function which contains one or multiple tests. We can have nested describe as well.\r\nit is a function again which is actually a test itself and takes two parameters, the first parameter names to the test and second parameter are a function which holds the body of the test.",
+	"description" : "UNIT TESTING is a level of software testing where individual units/ components of the software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. It usually has one or a few inputs and usually a single output. In procedural programming, a unit may be an individual program, function, procedure, etc. In object-oriented programming, the smallest unit is a method, which may belong to a base/ super class, abstract class or derived/ child class. (Some treat a module of an application as a unit. This is to be discouraged as there will probably be many individual units within that module.) Unit testing frameworks, drivers, stubs, and mock/ fake objects are used to assist in unit testing.",
+	"title" : "how to implement unit testing by nodejs",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(1)
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e14aa4ca7e4a991680baebd"),
+	"addtime" : ISODate("2020-01-07T14:35:14.077+00:00"),
+	"category" : ObjectId("5e035527b71071b6bb1cb3a1"),
+	"comments" : [ ],
+	"content" : "fuckkkkkkkkkkkkkkkkkkkkkkk",
+	"description" : "nobody wants to use angular",
+	"title" : "angular is fucking stupid",
+	"user" : ObjectId("5dffdc0b5af9096aa8389dbd"),
+	"views" : NumberInt(0)
+},

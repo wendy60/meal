@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/manager/">menu management home page</a></li>
+    <li><span>menu add</span></li>
+</ol>
+
+<h3>menu add</h3>
+<form role="form" method="post">
+
+    <div class="form-group">
+        <label for="title">restaurant:</label>
+        <select name="title" id="title" class="form-control">
+            {%for restaurant in restaurants%}
+            <option value="{{restaurant.title}}">{{restaurant.title}}</option>
+            {%endfor%}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="meal">meal name:</label>
+        <textarea name="meal" id="meal" class="form-control" rows="1" placeholder="please enter the meal name"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="price">meal price:</label>
+        <textarea name="price" id="price" class="form-control" rows="1" placeholder="please enter the meal price"></textarea>
+    </div>
+    <button style="display:block;margin:0 auto" type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+{% endblock %}

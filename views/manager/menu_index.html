@@ -1,0 +1,26 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/manager/">menu management home page</a></li>
+    <li><span>menu list</span></li>
+</ol>
+
+<h3>
+    <menu></menu> list</h3>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>restaurant</th>
+        <th>meal name</th>
+        <th>meal price</th>
+    </tr>
+    {% for menu in menus %}
+    <tr>
+        <td>{{menu._id.toString()}}</td>
+        <td>{{menu.title}}</td>
+        <td>{{menu.meal}}</td>
+        <td>{{menu.price}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% include 'menu_page.html' %}
