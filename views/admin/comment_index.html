@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block main %}
+
+<ol class="breadcrumb">
+    <li><a href="/">comment home page</a></li>
+    <li><span>comment list</span></li>
+</ol>
+
+<h3>comment list</h3>
+
+
+
+<table class="table table-hover table-striped">
+
+    <tr>
+        <th>ID</th>
+        <th>restaurant name</th>
+        <th>comments</th>
+        <th>operate</th>
+    </tr>
+
+    {% for restaurant in restaurants %}
+    <tr>
+        <td>{{restaurant._id.toString()}}</td>
+        <td>{{restaurant.title}}</td>
+        <td>{{JSON.stringify(restaurant.comments)}}</td>
+        <td>
+            <a href="/admin/category/delete?id={{restaurant._id.toString()}}">delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% include 'comment_page.html' %} {% endblock %}

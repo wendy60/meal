@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">management home page</a></li>
+    <li><span>restaurant list</span></li>
+</ol>
+
+<h3>restaurant list</h3>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>category</th>
+        <th>restaurant name</th>
+        <th>manager</th>
+        <th>add-time</th>
+        <td>views</td>
+        <td>operation</td>
+    </tr>
+    {% for restaurant in restaurant %}
+    <tr>
+        <td>{{restaurant._id.toString()}}</td>
+        <td>{{restaurant.category.name}}</td>
+        <td>{{restaurant.title}}</td>
+        <td>{{"Shirly"}}</td>
+        <td>{{restaurant.addtime|date('Y-m-d H:m:s')}}</td>
+        <td>{{restaurant.views}}</td>
+        <td>
+            <a href="/admin/restaurant/edit?id={{restaurant._id.toString()}}">edit</a> |
+            <a href="/admin/restaurant/delete?id={{restaurant._id.toString()}}">delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% include 'restaurant_page.html' %}

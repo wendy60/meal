@@ -1,0 +1,31 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/order/meal">meal home page</a></li>
+    <li><span>order meal reord list</span></li>
+</ol>
+
+<h3>order meal reord list</h3>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <td>customer</td>
+        <th>ID</th>
+        <th>restaurant name</th>
+        <th>meal name and price</th>
+        <th>dining style</th>
+        <th>payment method</th>
+        <th>addtime</th>
+    </tr>
+    {% for bill in bills %}
+    <tr>
+        <td>{{customerInfo.username}}</td>
+        <td>{{bill._id.toString()}}</td>
+        <td>{{bill.restaurant}}</td>
+        <td>{{bill.meal}}</td>
+        <td>{{bill.dining_style}}</td>
+        <td>{{bill.payment_method}}</td>
+        <td>{{bill.addtime|date('Y.m.d H:i:s',-60)}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% include 'meal_page.html' %}
