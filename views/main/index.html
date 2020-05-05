@@ -1,0 +1,43 @@
+ {%extends 'layout.html'%} {%block restaurant%} {%for restaurant in restaurants%}
+<div class="listBox">
+    <h1>{{restaurant.title}}</h1>
+    <p class="colDefault">
+        manager：<span class="colInfo">{{customerInfo.username}}</span> - register time：
+        <span class="colInfo">{{restaurant.addtime|date('Y-m-d H:i:s')}}</span> - view：
+        <span class="colInfo">{{restaurant.views}}</span> - comment：
+        <span class="colInfo">{{restaurant.comments.length}}</span>
+    </p>
+    <dfn><p>{{restaurant.description}}</p></dfn>
+    <div class="function"><a style="display:block;margin:0 auto" href="/view?restaurantid={{restaurant.id}}">enter to this restaurant</a></div>
+</div>
+{%endfor%}
+
+<div class="pager">
+    <ul class="clear">
+
+        <li class="previous">
+
+            {%if page
+            <=1 %} <span>no previous page</span>
+                {%else%}
+                <a href="/?category={{category}}&page={{page-1}}">previous page</a> {%endif%}
+
+        </li>
+
+        {%if pages > 0%}
+        <li>
+            <strong>{{page}} / {{pages}}</strong>
+        </li>
+        {%endif%}
+
+        <li class="next">
+
+            {%if page >= pages%}
+            <span>no next page</span> {%else%}
+            <a href="/?category={{category}}&page={{page+1}}">next page</a> {%endif%}
+
+        </li>
+
+    </ul>
+</div>
+{%endblock%}

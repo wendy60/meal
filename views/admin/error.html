@@ -1,0 +1,21 @@
+ {% extends 'layout.html' %} {% block main %}
+
+<ol class="breadcrumb">
+    <li><a href="/">management home page</a></li>
+    <li><span>error prompt</span></li>
+</ol>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">error prompt</h3>
+    </div>
+    <div class="panel-body">{{message}}</div>
+    <div class="panel-footer">
+        {% if url %}
+        <a href="{{url}}">click here to jump</a> {% else %}
+        <a href="javascript:window.history.back();">return to last step</a> {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}

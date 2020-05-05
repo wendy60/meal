@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} {% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">management home page</a></li>
+    <li><span>customer list</span></li>
+</ol>
+
+<h3>customer list</h3>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>customer name</th>
+        <th>password</th>
+        <th>isAdmin</th>
+        <th>isManager</th>
+
+    </tr>
+    {% for customer in customers %}
+    <tr>
+        <td>{{customer._id.toString()}}</td>
+        <td>{{customer.username}}</td>
+        <td>{{customer.password}}</td>
+        <td>{%if customer.isAdmin%} yes {%endif%}
+        </td>
+        <td>{%if customer.isManager%} yes {%endif%}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+{% include 'customer_page.html' %} {% endblock %}
