@@ -375,17 +375,16 @@ router.get('/restaurant/edit', function(req, res) {
     // });
     var id = req.query.id || '';
 
-    var restaurants = [];
+    var categories = [];
 
-    Restaurant.find().then(function(rs) {
+    Category.find().sort({ _id: 1 }).then(function(rs) {
 
-        restaurants = rs;
+        categories = rs;
 
         return Restaurant.findOne({
             _id: id
-        }).populate('restaurant');
+        }).populate('category');
     }).then(function(restaurant) {
-
         if (!restaurant) {
             res.render('admin/error', {
                 customerInfo: req.customerInfo,
@@ -395,7 +394,8 @@ router.get('/restaurant/edit', function(req, res) {
         } else {
             res.render('admin/restaurant_edit', {
                 customerInfo: req.customerInfo,
-                restaurants: restaurants,
+                categories: categories,
+                restaurant: restaurant,
             })
         }
     });

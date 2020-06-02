@@ -13,6 +13,7 @@
         <th>restaurant</th>
         <th>meal name</th>
         <th>meal price</th>
+        <th>operation</th>
     </tr>
     {% for menu in menus %}
     <tr>
@@ -20,6 +21,9 @@
         <td>{{menu.title}}</td>
         <td>{{menu.meal}}</td>
         <td>{{menu.price}}</td>
+        <td>
+            <a href="/manager/menu/delete?id={{menu._id.toString()}}">delete</a>
+        </td>
     </tr>
     {% endfor %}
 </table>

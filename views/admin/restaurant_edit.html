@@ -4,13 +4,17 @@
     <li><span>restaurant edit</span></li>
 </ol>
 
-<h3>restaurant edit{{restaurant.title}}</h3>
+<h3>restaurant edit - {{restaurant.title}}</h3>
 <form role="form" method="post">
     <div class="form-group">
         <label for="title">category:</label>
-        <select name="restaurant" id="restaurant" class="form-control">
-            {%for restaurant in restaurants%}
-            <option value="{{restaurant.id}}">{{restaurant.title}}</option>
+        <select name="category" id="category" class="form-control">
+            {%for category in categories%}
+                {%if restaurant.category._id.toString() == category._id.toString()%}
+                    <option value="{{category.id}}" selected>{{category.name}}</option>
+                {%else%}
+                    <option value="{{category.id}}">{{category.name}}</option>
+                {%endif%}
             {%endfor%}
         </select>
     </div>

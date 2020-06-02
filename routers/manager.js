@@ -128,7 +128,24 @@ router.post('/menu/add', function(req, res) {
     })
 });
 
+/*
+delete menu
+*/
 
+router.get('/menu/delete', function(req, res) {
+    var id = req.query.id || '';
+
+    Menu.remove({
+        _id: id
+    }).then(function() {
+        res.render('manager/success', {
+            customerInfo: req.customerInfo,
+            message: 'delete successfully',
+            url: '/manager/menu'
+        });
+    });
+    //res.send("hello");
+});
 
 
 module.exports = router;
