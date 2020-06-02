@@ -9,12 +9,12 @@ $('#messageBtn').on('click', function() {
         type: 'POST',
         url: '/api/comment/post',
         data: {
-            restaurantid: $('#restaurantId').val(), //当前餐厅的ID
-            content: $('#messageContent').val() //评论的内容
+            restaurantid: $('#restaurantId').val(), //corrent ID of restaurant
+            content: $('#messageContent').val() //context of comment
         },
         success: function(responseData) {
             //console.log(responseData);
-            $('#messageContent').val(''); //评论清空
+            $('#messageContent').val(''); //clear comment
             comments = responseData.data.comments.reverse(); //make order -- show new comment first
             renderComment(responseData.data);
         }
@@ -69,7 +69,7 @@ function renderComment() {
         $lis.eq(2).html('<a href="javascript:;">next page</a>');
     }
     if (comments.length == 0) {
-        $('.messageList').html('<div class="messageBox"><p>还没有评论</p></div>');
+        $('.messageList').html('<div class="messageBox"><p>have not comment yet</p></div>');
     } else {
         var html = '';
         for (var i = start; i < end; i++) {

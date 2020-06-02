@@ -148,11 +148,11 @@ router.get('/comment', function(req, res) {
 //submit comment
 router.post('/comment/post', function(req, res) {
     //content id
-    var restaurantId = req.body.restaurantid || ''; //前端传过来的餐厅的ID
+    var restaurantId = req.body.restaurantid || ''; //restaurant ID trnsfered from front-side
     var postData = {
         username: req.customerInfo.username, //cookie
         postTime: new Date(),
-        content: req.body.content //评论的内容
+        content: req.body.content //content of comment
     };
 
     //Query information about the current restaurant

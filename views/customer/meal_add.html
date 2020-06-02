@@ -6,6 +6,13 @@
 
 <h3>meal add</h3>
 <form role="form" method="post">
+    <script>
+        $(function() {
+            $("select").change(function() {
+                console.log($("select option:selected").text())
+            })
+        })
+    </script>
 
     <div class="form-group">
         <label for="category">category:</label>
@@ -19,17 +26,19 @@
     <div class="form-group">
         <label for="restaurant">restaurant:</label>
         <select name="restaurant" id="restaurant" class="form-control">
-            {%for category in categories%}
                 {%for restaurant in restaurants%}
                 <option value="{{restaurant.title}}">{{restaurant.title}}</option>
                 {%endfor%}
-            {%endfor%}
         </select>
     </div>
 
     <div class="form-group">
-        <label for="meal">menu:<br/> {%for menu in menus%}
-                <input type="checkbox" name="meal" id="meal" value="{{menu.title}} {{menu.meal}} {{menu.price}}">&nbsp;{{menu.title}} {{menu.meal}} {{menu.price}}<br/> {% endfor %}
+        <label for="meal">menu list:<br/>  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td>restaurant</td>  
+            <td>meal</td>
+            &nbsp;&nbsp;<td>price</td><br/> 
+            {%for menu in menus%}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="meal" id="meal" value="{{menu.title}} {{menu.meal}} {{menu.price}}">&nbsp;&nbsp;&nbsp;&nbsp;{{menu.title}}&nbsp;&nbsp;&nbsp;&nbsp; {{menu.meal}}&nbsp;&nbsp;&nbsp;&nbsp; {{menu.price}}<br/> {% endfor %}
             </label>
     </div>
 
